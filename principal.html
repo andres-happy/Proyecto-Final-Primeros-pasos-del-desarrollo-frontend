@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Hoja de estilos propia-->
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <!-- Iconos de fontawesome.com-->
+    <script src="https://kit.fontawesome.com/fb219c69e3.js" crossorigin="anonymous"></script>
+    <!-- Importo la biblioteca jquery de google para trabajar con https://randomuser.me/ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <div id="pagina">
+        
+        <div id="encabezado" class="encabezado">
+            <!--
+            -->
+            
+            <div id="perfil">
+                <figure id="foto">
+                    <img src="" alt="Foto de perfil" id="fotoPerfil"/>
+                </figure>
+            </div>
+            
+            <div id="redes" >
+                <figure class="redesContacto">
+                    <a href="https://github.com/" target="_blank">
+                        <img src="imagenes/github-mark.svg" class="imgRedes" alt="Gitgub logo">
+                    </a>
+                </figure>
+                <figure class="redesContacto">
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="imagenes/In-Blue-128.png" class="imgRedes" alt="LinkedIn logo">
+                    </a>
+                </figure>
+            </div>
+            
+            <div id="nombreTitulo">
+                <h1 class="nombreTitulo" id="apellidoPersona"></h1>
+                <h1 class="nombreTitulo" id="nombrePersona"></h1>
+                <h2 class="nombreTitulo" id="profesionPersona">Estudiante</h2>
+            </div>
+        </div>
+        
+        <div id="cuerpo">
+            
+            <div id="info" class="tematica">
+                <div id="titInfoPersonal" class="titulo">
+                    <h3>Información personal y de contacto</h3>
+                    <div class="fleVisibilidad" id="mostrarInfo">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarInfo">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </div>
+                <div id="listaDatos">
+                    <p>Identificacion: <span id="identificacionPersona"></span></p>
+                    <p>Fecha de nacimiento: <span id="nacimientoPersona"></span></p>
+                    <p>Residencia: <span id="residenciaPersona"></span></p>
+                    <p>Calle: <span id="callePersona"></span></p>
+                    <p>Código postal: <span id="codPostPersona"></p>
+                    <p>Zona horaria: <span id="zonaHorariaPersona"></span></p>
+                    <p>Correo electrónico: <span id="correoElectPersona"></span></p>
+                    <p>Teléfono móvil: <span id="telMovilPersona"></span></p>
+                    <p>Teléfono fijo: <span id="telFijoPersona"></span></p>
+                </div>
+            </div>
+            <div id="expLab" class="tematica">
+                <div id="titExpLab" class="titulo">
+                    <h3>Experiencia laboral</h3>
+                    <div class="fleVisibilidad" id="mostrarExpLab">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarExpLab">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </div>
+                <ul>
+                    <li><p><span class="resaltar">2020 - actualidad:</span> trabajo en remoto como developer</p></li>
+                    <li><p><span class="resaltar">2017 - 2020:</span> atención al cliente en supermercado</p></li>
+                </ul>
+            </div>
+            <div id="competencias" class="tematica">
+                <div id="titCompetencias" class="titulo">
+                    <h3>Competencias</h3>
+                    <div class="fleVisibilidad" id="mostrarComp">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarComp">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </div>
+                <div>
+                    <p>HTML: <progress class="barraProgreso" max="100" value="25"></progress></p>
+                    <p>CSS:  <progress class="barraProgreso" max="100" value="10"></progress></p>
+                    <p>JS:  <progress class="barraProgreso" max="100" value="10"></progress></p>
+                </div>
+            </div>
+            <div id="cursos" class="tematica">
+                <div id="titCursos" class="titulo">
+                    <h3>Cursos, seminarios y capacitaciones</h3>
+                    <div class="fleVisibilidad" id="mostrarCursos">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarCursos">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </div>
+                <ul>
+                    <li><p><span class="resaltar">sep-2022 - nov-2022:</span> Etapa se programar - ArgentinaPrograma</p></li>
+                    <li><p><span class="resaltar">jul-2022:</span> Competencias digitales - Google activate</p></li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+        <footer>
+            Documento creado para el curso "Introducción al frontend" de academia Ticmas 2023
+        </footer>
+    </div>
+        <!-- Inicio del javascript propio, se pone al final para darle tiempo a que la página termine de cargar-->
+    <script src="js/funcionalidad.js"></script>
+
+</body>
+</html>

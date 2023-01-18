@@ -1,0 +1,143 @@
+/*Paleta de colores
+Purpureus white text
+#AA38B6
+#a174a7
+Vivid sky blue black text
+#4CC9F0
+Rich black FOGRA 29
+#0D1821
+Sage black text
+#BFCC94
+Conquelicot black text
+#FC440F
+*/
+
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #06D6A059;
+    justify-content: center;
+}
+
+
+#pagina{
+    display: flexbox;
+    justify-content:center;
+    margin: auto;
+    min-width: 650px;
+    max-width: 1000px;
+    padding: 30px;
+    background-color: white;
+}
+
+.encabezado{
+    height: 200px;
+    display: flex;
+    /*background-color: #0D1821;*/
+}
+
+#perfil{
+    float: left;
+    min-width: 128px;
+    max-width: 140px;
+    width: 20%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+/* figure contenedor de img
+*/
+#foto{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 128px;
+    min-height: 128px;
+    width: 99%;
+    height: 99%;
+
+}
+
+/* img contenedor de la imagen de perfil */
+#fotoPerfil{
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+
+}
+
+/* div contenedor de los figure e img */
+#redes{
+    float: left;
+    width: 80px;
+    height: 200px;
+}
+/* clase de figure que contiene las img */
+.redesContacto{
+    margin: 16px 0px;
+    display: flex;
+    justify-content: center;
+    
+}
+/**
+a {
+    margin: auto;
+}
+clase contenedora de las img 
+*/
+.imgRedes {
+    height: 35px;
+    transition: 0.5s ease 0.05s;
+}
+.imgRedes:hover {
+    transform: scale(1.25);
+}
+
+/* div contenedor del nombre y profesion */
+#nombreTitulo{
+    float: left;
+    flex-direction: row;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.tematica{
+    clear: both;
+    border-top: 3px solid #048A81;
+    padding-bottom: 10px;
+}
+
+.resaltar {
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+footer {
+    clear: both;
+}
+
+.fleVisibilidad {
+    margin-top: 23px;
+    margin-right: 45px;
+    float: right;
+
+}
+
+.titulo {
+    padding-bottom: 4em;
+    border-bottom: 1px solid grey;
+}
+.titulo h3 {
+    float: left;
+    display: flex;
+    margin: 0px;
+    padding: 1em;
+}
+
+[id^=mostrar] {
+    display: none;
+}
