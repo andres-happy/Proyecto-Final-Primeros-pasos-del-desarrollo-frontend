@@ -131,6 +131,7 @@ p{
     display: flex;
     margin: 0px;
     padding: 1em;
+    font-size: 1.27em;
 }
 
 [id^=mostrar] {
