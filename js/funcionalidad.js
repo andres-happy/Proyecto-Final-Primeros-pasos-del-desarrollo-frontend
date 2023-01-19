@@ -3,13 +3,17 @@ let foto, nombre, apellido, genero, identificacion, nroIdentificacion, pais, pro
 let zonaHoraria, hora, correoElect, fechaNac, edad, telMovil, telFijo, seed;
 
 
-console.log("Inicia el JS");
+/**
+ * console.log("Inicia el JS");
+ */
 
 $.ajax({
     url: 'https://randomuser.me/api/?nat=es',
     dataType: 'json',
     success: function(data) {
-        console.log(data.results[0]);
+        /**
+         * console.log(data.results[0]);
+         */
 
         foto = data.results[0].picture.large;
         apellido = data.results[0].name.last;
@@ -45,17 +49,14 @@ $.ajax({
         telMovilPersona.innerText=telMovil;
         telFijoPersona.innerText=telFijo;
 
-        console.log('fin de los datos');
-        console.log(data);
         seed = data.info.seed;
         
-        console.log(foto);
     }
 });
 
 
 /**
- * script para ocultar los datos con flechas
+ * script para mostrar u ocultar los datos de interés
  */
 let botones = document.getElementsByClassName('fleVisibilidad');
 for(let i=0; i<botones.length; i++){

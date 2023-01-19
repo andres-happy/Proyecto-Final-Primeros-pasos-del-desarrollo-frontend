@@ -1,25 +1,24 @@
 /*Paleta de colores
-Purpureus white text
-#AA38B6
-#a174a7
-Vivid sky blue black text
-#4CC9F0
-Rich black FOGRA 29
-#0D1821
-Sage black text
-#BFCC94
-Conquelicot black text
-#FC440F
+Celadon Green
+#048A81
+Caribbean Green
+#06D6A0
+Vivid Sky Blue
+#54C6EB
+Blue Bell
+#8A89C0
+Tuscany
+#CDA2AB
 */
 
-* {
-    box-sizing: border-box;
-}
 body{
     background-color: #06D6A059;
     justify-content: center;
 }
-
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05em;
+}
 
 #pagina{
     display: flexbox;
@@ -31,12 +30,13 @@ body{
     background-color: white;
 }
 
+/* Elementos del encabezado */
 .encabezado{
     height: 200px;
     display: flex;
-    /*background-color: #0D1821;*/
 }
 
+/*Contenedor de la foto de perfil (figure e img)*/
 #perfil{
     float: left;
     min-width: 128px;
@@ -46,8 +46,7 @@ body{
     margin-left: 10px;
 }
 
-/* figure contenedor de img
-*/
+/* figure contenedor de img*/
 #foto{
     margin: 0px;
     display: flex;
@@ -65,15 +64,15 @@ body{
     border-radius: 50%;
     width: 128px;
     height: 128px;
-
 }
 
-/* div contenedor de los figure e img */
+/* div contenedor de los imagenes de redes de contacto*/
 #redes{
     float: left;
     width: 80px;
     height: 200px;
 }
+
 /* clase de figure que contiene las img */
 .redesContacto{
     margin: 16px 0px;
@@ -81,14 +80,9 @@ body{
     justify-content: center;
     
 }
-/**
-a {
-    margin: auto;
-}
-clase contenedora de las img 
-*/
+/* clase contenedora de las img */
 .imgRedes {
-    height: 35px;
+    height: 40px;
     transition: 0.5s ease 0.05s;
 }
 .imgRedes:hover {
@@ -104,32 +98,33 @@ clase contenedora de las img
     text-align: center;
 }
 
+
+/* Elementos del cuerpo*/
 .tematica{
     clear: both;
     border-top: 3px solid #048A81;
     padding-bottom: 10px;
 }
 
-.resaltar {
-    font-weight: bold;
-    text-decoration: underline;
-    font-style: italic;
+.datos {
+    padding-left: 40px;
 }
 
-footer {
-    clear: both;
+.resaltar {
+    font-family: 'Roboto', sans-serif;;
+    text-decoration: underline;
 }
 
 .fleVisibilidad {
     margin-top: 23px;
     margin-right: 45px;
     float: right;
-
+    
 }
 
 .titulo {
     padding-bottom: 4em;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #54C6EB;
 }
 .titulo h3 {
     float: left;
@@ -140,4 +135,10 @@ footer {
 
 [id^=mostrar] {
     display: none;
+}
+
+footer {
+    clear: both;
+    border-top: 1px solid #54C6EB;
+    padding-top: 1em;
 }

@@ -12,6 +12,11 @@
     <!-- Importo la biblioteca jquery de google para trabajar con https://randomuser.me/ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
+    <!-- Fuentes "ROBOTO" y "OPEN SANS" de https://fonts.google.com/-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
@@ -28,12 +33,12 @@
             </div>
             
             <div id="redes" >
-                <figure class="redesContacto">
+                <figure title="Perfil de Github" class="redesContacto">
                     <a href="https://github.com/" target="_blank">
                         <img src="imagenes/github-mark.svg" class="imgRedes" alt="Gitgub logo">
                     </a>
                 </figure>
-                <figure class="redesContacto">
+                <figure title="Perfil de LinkedIn" class="redesContacto">
                     <a href="https://www.linkedin.com/" target="_blank">
                         <img src="imagenes/In-Blue-128.png" class="imgRedes" alt="LinkedIn logo">
                     </a>
@@ -59,16 +64,16 @@
                         <i class="fa-solid fa-chevron-up"></i>
                     </div>
                 </div>
-                <div id="listaDatos">
-                    <p>Identificacion: <span id="identificacionPersona"></span></p>
-                    <p>Fecha de nacimiento: <span id="nacimientoPersona"></span></p>
-                    <p>Residencia: <span id="residenciaPersona"></span></p>
-                    <p>Calle: <span id="callePersona"></span></p>
-                    <p>Código postal: <span id="codPostPersona"></p>
-                    <p>Zona horaria: <span id="zonaHorariaPersona"></span></p>
-                    <p>Correo electrónico: <span id="correoElectPersona"></span></p>
-                    <p>Teléfono móvil: <span id="telMovilPersona"></span></p>
-                    <p>Teléfono fijo: <span id="telFijoPersona"></span></p>
+                <div class="datos">
+                    <p><span class="resaltar">Identificacion:</span> <span id="identificacionPersona"></span></p>
+                    <p><span class="resaltar">Fecha de nacimiento:</span> <span id="nacimientoPersona"></span></p>
+                    <p><span class="resaltar">Residencia:</span> <span id="residenciaPersona"></span></p>
+                    <p><span class="resaltar">Calle:</span> <span id="callePersona"></span></p>
+                    <p><span class="resaltar">Código postal:</span> <span id="codPostPersona"></p>
+                    <p><span class="resaltar">Zona horaria:</span> <span id="zonaHorariaPersona"></span></p>
+                    <p><span class="resaltar">Correo electrónico:</span> <span id="correoElectPersona"></span></p>
+                    <p><span class="resaltar">Teléfono móvil:</span> <span id="telMovilPersona"></span></p>
+                    <p><span class="resaltar">Teléfono fijo:</span> <span id="telFijoPersona"></span></p>
                 </div>
             </div>
             <div id="expLab" class="tematica">
@@ -81,7 +86,7 @@
                         <i class="fa-solid fa-chevron-up"></i>
                     </div>
                 </div>
-                <ul>
+                <ul class="datos">
                     <li><p><span class="resaltar">2020 - actualidad:</span> trabajo en remoto como developer</p></li>
                     <li><p><span class="resaltar">2017 - 2020:</span> atención al cliente en supermercado</p></li>
                 </ul>
@@ -96,7 +101,7 @@
                         <i class="fa-solid fa-chevron-up"></i>
                     </div>
                 </div>
-                <div>
+                <div class="datos">
                     <p>HTML: <progress class="barraProgreso" max="100" value="25"></progress></p>
                     <p>CSS:  <progress class="barraProgreso" max="100" value="10"></progress></p>
                     <p>JS:  <progress class="barraProgreso" max="100" value="10"></progress></p>
@@ -112,7 +117,7 @@
                         <i class="fa-solid fa-chevron-up"></i>
                     </div>
                 </div>
-                <ul>
+                <ul class="datos">
                     <li><p><span class="resaltar">sep-2022 - nov-2022:</span> Etapa se programar - ArgentinaPrograma</p></li>
                     <li><p><span class="resaltar">jul-2022:</span> Competencias digitales - Google activate</p></li>
                     
@@ -122,7 +127,7 @@
         </div>
         
         <footer>
-            Documento creado para el curso "Introducción al frontend" de academia Ticmas 2023
+            Documento creado para el curso "Introducción al frontend" de academia Ticmas 2023 el el marco del proyecto ARGENTINA PROGRAMA 4.0.
         </footer>
     </div>
         <!-- Inicio del javascript propio, se pone al final para darle tiempo a que la página termine de cargar-->
