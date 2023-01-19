@@ -16,7 +16,7 @@ $.ajax({
          */
 
         foto = data.results[0].picture.large;
-        apellido = data.results[0].name.last;
+        apellido= data.results[0].name.last;
         nombre = data.results[0].name.first;
 
         identificacion = data.results[0].id.name;
@@ -36,7 +36,7 @@ $.ajax({
         telFijo = data.results[0].phone;
 
         fotoPerfil.src=foto;
-        apellidoPersona.innerText=apellido;
+        apellidoPersona.innerText=apellido.toUpperCase();
         nombrePersona.innerText=nombre;
 
         identificacionPersona.innerText=identificacion + " _ " + nroIdentificacion;
