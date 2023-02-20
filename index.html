@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CV</title>
+    <!-- Hoja de estilos propia-->
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <!-- Iconos de fontawesome.com-->
+    <script src="https://kit.fontawesome.com/fb219c69e3.js" crossorigin="anonymous"></script>
+    <!-- Importo la biblioteca jquery de google para trabajar con https://randomuser.me/ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- 
+    -->
+
+    <!-- Fuentes "ROBOTO" y "OPEN SANS" de https://fonts.google.com/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imagenes/icono de pagina.png">
+
+</head>
+<body>
+    
+    <div id="pagina">
+        
+        <header>
+
+            <nav>
+                <ul>
+                    <li><a href="#titInfoPersonal">INFORMACIÓN PERSONAL Y DE CONTACTO</a></li>
+                    <li><a href="#titExpLab">EXPERIENCIA LABORAL</a></li>
+                    <li><a href="#titExpLab">ESTUDIOS ACADÉMICOS</a></li>
+                    <li><a href="#titCompetencias">COMPETENCIAS</a></li>
+                    <li><a href="#titCursos">CAPACITACIONES</a></li>
+                </ul>
+                
+                <!--Modo oscuro-->
+                <i title="Modo claro activo" id="modoVis" class="fa-solid fa-sun"></i>
+            </nav>
+            
+            <section id="encabezado" class="encabezado">
+                <article id="perfil">
+                    <figure id="foto">
+                        <img src="" alt="Foto de perfil" id="fotoPerfil"/>
+                    </figure>
+                </article>
+
+                <article id="redes">
+                    <figure title="Perfil de Github" class="redesContacto">
+                        <a href="https://github.com/" target="_blank">
+                            <img id="img-github" src="imagenes/github/github-mark.svg" class="imgRedes" alt="Gitgub logo">
+                        </a>
+                    </figure>
+                    <figure title="Perfil de LinkedIn" class="redesContacto">
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <img id="img-lin" src="imagenes/linked in/In-Blue-128.png" class="imgRedes" alt="LinkedIn logo">
+                        </a>
+                    </figure>
+                </article>
+                <article id="nombreTitulo">
+                <h1 class="nombreTitulo" id="apellidoPersona"></h1>
+                <h1 class="nombreTitulo" id="nombrePersona"></h1>
+                <h2 class="nombreTitulo" id="profesionPersona">Estudiante</h2>
+                </article>
+            </section>
+        </header>
+
+
+        <main id="cuerpo">
+            <section id="info" class="tematica">
+                <article id="titInfoPersonal" class="titulo">
+                    <i class="fa-solid fa-address-card iconoTitulo"></i>
+                    <h3>INFORMACIÓN PERSONAL Y DE CONTACTO</h3>
+                    <div class="fleVisibilidad" id="mostrarInfo">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarInfo">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article class="datos">
+                    <p><span class="resaltar">Identificacion:</span> <span id="identificacionPersona"></span></p>
+                    <p><span class="resaltar">Fecha de nacimiento:</span> <span id="nacimientoPersona"></span></p>
+                    <p><span class="resaltar">Residencia:</span> <span id="residenciaPersona"></span></p>
+                    <p><span class="resaltar">Calle:</span> <span id="callePersona"></span></p>
+                    <p><span class="resaltar">Código postal:</span> <span id="codPostPersona"></p>
+                    <p><span class="resaltar">Zona horaria:</span> <span id="zonaHorariaPersona"></span></p>
+                    <p><span class="resaltar">Correo electrónico:</span> <span id="correoElectPersona"></span></p>
+                    <p><span class="resaltar">Teléfono móvil:</span> <span id="telMovilPersona"></span></p>
+                    <p><span class="resaltar">Teléfono fijo:</span> <span id="telFijoPersona"></span></p>
+                </article>
+            </section>
+
+            <section id="expLab" class="tematica">
+                <article id="titExpLab" class="titulo">
+                    <i class="fa-solid fa-briefcase iconoTitulo"></i>
+                    <h3>EXPERIENCIA LABORAL</h3>
+                    <div class="fleVisibilidad" id="mostrarExpLab">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarExpLab">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article>
+                    <ul class="datos">
+                        <li><p><span class="resaltar">2020 - actualidad:</span> trabajo en remoto como developer</p></li>
+                        <li><p><span class="resaltar">2017 - 2020:</span> atención al cliente en supermercado</p></li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="estudios" class="tematica">
+                <article id="titEstudios" class="titulo">
+                    <i class="fa-solid fa-graduation-cap iconoTitulo"></i>
+                    <h3>ESTUDIOS ACADÉMICOS</h3>
+                    <div class="fleVisibilidad" id="mostrarEstudios">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarEstudios">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article class="datos">
+                    <ul>
+                        <li><p><span class="resaltar">Ingeniería en sistemas de información:</span> en curso</p></li>
+                        <li><p><span class="resaltar">Secundario:</span> completo</p></li>
+                        <li><p><span class="resaltar">Primario:</span> completo</p></li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="competencias" class="tematica">
+                <article  id="titCompetencias" class="titulo">
+                    <i class="fa-solid fa-laptop-code iconoTitulo"></i>
+                    <h3>COMPETENCIAS</h3>
+                    <div class="fleVisibilidad" id="mostrarComp">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarComp">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article class="datos">
+                    <p>HTML: <progress class="barraProgreso" max="100" value="25"></progress></p>
+                    <p>CSS:  <progress class="barraProgreso" max="100" value="10"></progress></p>
+                    <p>JS:  <progress class="barraProgreso" max="100" value="10"></progress></p>
+                </article>
+            </section>
+
+            <section id="cursos" class="tematica">
+                <article id="titCursos" class="titulo">
+                    <i class="fa-solid fa-chalkboard-user iconoTitulo"></i>
+                    <h3>CURSOS, SEMINARIOS Y CAPACITACIONES</h3>
+                    <div class="fleVisibilidad" id="mostrarCursos">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarCursos">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article>
+                    <ul class="datos">
+                        <li><p><span class="resaltar">sep-2022 - nov-2022:</span> Etapa se programar - ArgentinaPrograma</p></li>
+                        <li><p><span class="resaltar">jul-2022:</span> Competencias digitales - Google activate</p></li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+
+        <i id="btnToTop" title='Ir al inicio' class="fa-solid fa-arrow-up flecha"></i>
+
+        <footer>
+            Documento creado para el curso "Primeros pasos del desarrollo frondend" de academia Ticmas 2023 el marco de ARGENTINA PROGRAMA 4.0.
+        </footer>
+    </div>
+    <!-- Inicio del javascript propio, se pone al final para darle tiempo a que la página termine de cargar-->
+    <script src="js/funcionalidad.js"></script>
+
+</body>
+</html>

@@ -107,6 +107,65 @@ for(let i=0; i<botones.length; i++){
                 ocultarCursos.style.display="none";
                 mostrarCursos.style.display="block";
                 break;
+            case 'mostrarEstudios':
+                elementoVisibilidad.style.display="block";
+                mostrarEstudios.style.display="none";
+                ocultarEstudios.style.display="block";
+                break;
+            case 'ocultarEstudios':
+                elementoVisibilidad.style.display="none";
+                ocultarEstudios.style.display="none";
+                mostrarEstudios.style.display="block";
+                break;
         }
     }, false);
 };
+
+/*Modo oscuro*/
+let modo=document.getElementById("modoVis")
+
+modo.addEventListener ("click", function(){
+    if (modo.className.includes("fa-sun")){
+        modo.className= "fa-solid fa-moon";
+        modo.title="Modo oscuro activo";
+        document.documentElement.style.setProperty('--color-1', '#334f48');
+        document.documentElement.style.setProperty('--color-2', '#172a21');
+        document.documentElement.style.setProperty('--color-3', '#5d8883');
+        document.documentElement.style.setProperty('--color-pagina', '#334f48');
+        document.documentElement.style.setProperty('--color-texto', 'darkgray');
+        document.getElementById('img-github').src='imagenes/github/github-mark-white.svg';
+        document.getElementById('img-lin').src='imagenes/linked in/In-White-96@2x.png';
+    } else {
+        modo.className="fa-solid fa-sun";
+        modo.title="Modo claro activo";
+        document.documentElement.style.setProperty('--color-1', '#048A81');
+        document.documentElement.style.setProperty('--color-2', '#6bada9');
+        document.documentElement.style.setProperty('--color-3', '#54C6EB');
+        document.documentElement.style.setProperty('--color-pagina', 'white');
+        document.documentElement.style.setProperty('--color-texto', 'black');
+        document.getElementById('img-github').src='imagenes/github/github-mark.svg';
+        document.getElementById('img-lin').src='imagenes/linked in/In-Blue-128.png';
+
+    }
+})
+
+/*Scroll to top*/
+let btnToTop=document.getElementById("btnToTop");
+window.onscroll=function(){visibilidadBtnToTopFunc()};
+
+btnToTop.addEventListener("click",function(){
+    document.body.scrollTop=0;
+    document.documentElement.scrollTop=0;
+});
+
+
+function visibilidadBtnToTopFunc(){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        btnToTop.style.display="block";
+        setTimeout(function(){
+            btnToTop.style.display="none";
+        }, 2100);
+    } else {
+        btnToTop.style.display="none";
+    }
+}
