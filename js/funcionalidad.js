@@ -3,10 +3,6 @@ let foto, nombre, apellido, genero, identificacion, nroIdentificacion, pais, pro
 let zonaHoraria, hora, correoElect, fechaNac, edad, telMovil, telFijo, seed;
 
 
-/**
- * console.log("Inicia el JS");
- */
-
 $.ajax({
     url: 'https://randomuser.me/api/?nat=es',
     dataType: 'json',
