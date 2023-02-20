@@ -5,20 +5,23 @@ color-2
 #6bada9
 color-3
 #54C6EB
-
+color-pagina
+white
+color-texto
+black
 
 */
 /*Paleta de colores modo oscuro
-Dark green
-#172a21
-Dark slate gray
+color-1
 #334f48
-Hooker's green
+color-2
+#172a21
+color-3
 #5d8883
-Tigany blue
-#9fccc6
-Light cyan
-#dbf2ef
+color-pagina
+#334f48
+color-texto
+darkgray
 */
 
 :root{
@@ -38,11 +41,6 @@ body{
     margin: 0;
 }
 
-p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.05em;
-}
-
 #pagina{
     display: flexbox;
     justify-content:center;
@@ -53,10 +51,49 @@ p{
     background-color: var(--color-pagina);
 }
 
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05em;
+}
+
 /* Elementos del encabezado */
 .encabezado{
     height: 200px;
     display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center ;
+    padding: 2.1rem 1rem;
+    background-color: var(--color-2);
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+
+}
+nav ul li a{
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 1rem;
+}
+
+#modoVis{
+    padding: 1rem;
+}
+#modoVis:hover, a:hover{
+    cursor: pointer;
+    background-color: var(--color-1);
+    border-radius: 6px;
 }
 
 /*Contenedor de la foto de perfil (figure e img)*/
@@ -127,6 +164,14 @@ p{
 
 
 /* Elementos del cuerpo*/
+.iconoTitulo {
+    float: left;
+    flex-direction: row;
+    margin-top: 19px;
+    margin-left: 15px;
+    font-size: 1.4rem;
+}
+
 .tematica{
     clear: both;
     border-top: 3px solid var(--color-3);
@@ -178,7 +223,6 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
-/*________________________________________________________________________________*/
 
 #btnToTop{
     display: none;
@@ -201,46 +245,4 @@ footer {
 #btnToTop:hover{
     transform: scale(1.25);
     transition: 0.5s ease 0.05s;
-}
-
-.iconoTitulo {
-    float: left;
-    flex-direction: row;
-    margin-top: 19px;
-    margin-left: 15px;
-    font-size: 1.4rem;
-}
-#modoVis{
-    padding: 1rem;
-}
-
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center ;
-    padding: 2.1rem 1rem;
-    background-color: var(--color-2);
-}
-
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-nav ul li{
-    display: inline-block;
-
-}
-nav ul li a{
-    color: var(--color-texto);
-    text-decoration: none;
-    font-size: 1rem;
-    display: block;
-    padding: 1rem;
-}
-
-#modoVis:hover, a:hover{
-    cursor: pointer;
-    background-color: var(--color-1);
-    border-radius: 6px;
 }
