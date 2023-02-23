@@ -26,7 +26,7 @@ darkgray
 
 :root{
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     --color-1: #048A81;
     --color-2: #6bada9;
     --color-3: #54C6EB;
@@ -90,7 +90,7 @@ nav ul li a{
 #modoVis{
     padding: 1rem;
 }
-#modoVis:hover, a:hover{
+#modoVis:hover, nav ul li a:hover{
     cursor: pointer;
     background-color: var(--color-1);
     border-radius: 6px;
