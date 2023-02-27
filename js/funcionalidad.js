@@ -62,60 +62,78 @@ for(let i=0; i<botones.length; i++){
         let abuelo= padre.parentNode;
         let elementoVisibilidad = abuelo.children[1];
         
-        switch (identificador) {
-            case 'mostrarInfo':
-                elementoVisibilidad.style.display="block";
-                mostrarInfo.style.display="none";
-                ocultarInfo.style.display="block";
-                break;
-            case 'ocultarInfo':
-                elementoVisibilidad.style.display="none";
-                ocultarInfo.style.display="none";
-                mostrarInfo.style.display="block";
-                break;
-            case 'mostrarExpLab':
-                elementoVisibilidad.style.display="block";
-                mostrarExpLab.style.display="none";
-                ocultarExpLab.style.display="block";
-                break;
-            case 'ocultarExpLab':
-                elementoVisibilidad.style.display="none";
-                ocultarExpLab.style.display="none";
-                mostrarExpLab.style.display="block";
-                break;
-            case 'mostrarComp':
-                elementoVisibilidad.style.display="block";
-                mostrarComp.style.display="none";
-                ocultarComp.style.display="block";
-                break;
-            case 'ocultarComp':
-                elementoVisibilidad.style.display="none";
-                ocultarComp.style.display="none";
-                mostrarComp.style.display="block";
-                break;
-            case 'mostrarCursos':
-                elementoVisibilidad.style.display="block";
-                mostrarCursos.style.display="none";
-                ocultarCursos.style.display="block";
-                break;
-            case 'ocultarCursos':
-                elementoVisibilidad.style.display="none";
-                ocultarCursos.style.display="none";
-                mostrarCursos.style.display="block";
-                break;
-            case 'mostrarEstudios':
-                elementoVisibilidad.style.display="block";
-                mostrarEstudios.style.display="none";
-                ocultarEstudios.style.display="block";
-                break;
-            case 'ocultarEstudios':
-                elementoVisibilidad.style.display="none";
-                ocultarEstudios.style.display="none";
-                mostrarEstudios.style.display="block";
-                break;
-        }
+        mostrarOcultar(identificador, elementoVisibilidad);
+
     }, false);
 };
+
+// Función para mostrar u ocultar botones
+
+function mostrarOcultar(identificador, elementoVisibilidad){
+    switch (identificador) {
+        case 'mostrarInfo':
+            elementoVisibilidad.style.display="block";
+            mostrarInfo.style.display="none";
+            ocultarInfo.style.display="block";
+            break;
+        case 'ocultarInfo':
+            elementoVisibilidad.style.display="none";
+            ocultarInfo.style.display="none";
+            mostrarInfo.style.display="block";
+            break;
+        case 'mostrarExpLab':
+            elementoVisibilidad.style.display="block";
+            mostrarExpLab.style.display="none";
+            ocultarExpLab.style.display="block";
+            break;
+        case 'ocultarExpLab':
+            elementoVisibilidad.style.display="none";
+            ocultarExpLab.style.display="none";
+            mostrarExpLab.style.display="block";
+            break;
+        case 'mostrarComp':
+            elementoVisibilidad.style.display="block";
+            mostrarComp.style.display="none";
+            ocultarComp.style.display="block";
+            break;
+        case 'ocultarComp':
+            elementoVisibilidad.style.display="none";
+            ocultarComp.style.display="none";
+            mostrarComp.style.display="block";
+            break;
+        case 'mostrarCursos':
+            elementoVisibilidad.style.display="block";
+            mostrarCursos.style.display="none";
+            ocultarCursos.style.display="block";
+            break;
+        case 'ocultarCursos':
+            elementoVisibilidad.style.display="none";
+            ocultarCursos.style.display="none";
+            mostrarCursos.style.display="block";
+            break;
+        case 'mostrarEstudios':
+            elementoVisibilidad.style.display="block";
+            mostrarEstudios.style.display="none";
+            ocultarEstudios.style.display="block";
+            break;
+        case 'ocultarEstudios':
+            elementoVisibilidad.style.display="none";
+            ocultarEstudios.style.display="none";
+            mostrarEstudios.style.display="block";
+            break;
+        case 'mostrarContactar':
+            elementoVisibilidad.style.display="block";
+            mostrarContactar.style.display="none";
+            ocultarContactar.style.display="block";
+            break;
+        case 'ocultarContactar':
+            elementoVisibilidad.style.display="none";
+            ocultarContactar.style.display="none";
+            mostrarContactar.style.display="block";
+            break;
+    }
+}
+
 
 /*Modo oscuro*/
 let modo=document.getElementById("modoVis")

@@ -49,6 +49,7 @@
                     <li><a href="#titExpLab">ESTUDIOS ACADÉMICOS</a></li>
                     <li><a href="#titCompetencias">COMPETENCIAS</a></li>
                     <li><a href="#titCursos">CAPACITACIONES</a></li>
+                    <li><a href="#titContactar">CONTACTAR</a></li>
                 </ul>
 
                 <!--Modo oscuro-->
@@ -198,6 +199,36 @@
                     </ul>
                 </article>
             </section>
+            <section id="contactar" class="tematica">
+                <article  id="titContactar" class="titulo">
+                    <i class="fa-solid fa-envelope iconoTitulo"></i>
+                    <h3>CONTACTAR</h3>
+                    <div class="fleVisibilidad" id="mostrarContactar">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarContactar">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article>
+                    <form id="formularioContactar">
+                        <label for="nombreCont">Nombre:</label>
+                        <input type="text" name="nombreCont" id="nombreCont" class="cajaFormulario" required placeholder="INGRESE SU NOMBRE"><br>
+
+                        <label for="apellidoCont">Apellido:</label>
+                        <input type="text" name="apellidoCont" id="apellidoCont" class="cajaFormulario" required placeholder="INGRESE SU APELLIDO"><br>
+
+                        <label for="correoElecCont">Correo electrónico</label>
+                        <input type="email" name="correoElecCont" id="correoElecCont" class="cajaFormulario" required placeholder="correo@ejemplo.com"><br>
+
+                        <label for="asuntoCont">Asunto:</label>
+                        <input type="text" name="asuntoCont" id="asuntoCont" class="cajaFormulario" required placeholder="ASUNTO"><br>
+
+                        <textarea name="comentariosCont" id="comentariosCont" class="cajaFormulario" cols="50" rows="8" placeholder="Comentarios adicionales..."></textarea><br>
+                        <input type="submit" id="enviarFormulario" class="cajaFormulario" name="Enviar" value="Enviar">
+                    </form>
+                </article>
+            </section>
         </main>
 
         <i id="btnToTop" title='Ir al inicio' class="fa-solid fa-arrow-up flecha"></i>
@@ -205,6 +236,7 @@
         <footer>
             Documento creado para el curso "Primeros pasos del desarrollo frondend" de academia Ticmas 2023 el marco de
             ARGENTINA PROGRAMA 4.0.
+            <p>Consulte el <a href="https://github.com/andres-happy/Proyecto-Final-Primeros-pasos-del-desarrollo-frontend"  target="_blank"> repositorio</a> para acceder a los archivos.</p>
         </footer>
     </div>
     <!-- Inicio del javascript propio, se pone al final para darle tiempo a que la página termine de cargar-->

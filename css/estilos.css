@@ -32,6 +32,7 @@ darkgray
     --color-3: #54C6EB;
     --color-pagina: white;
     --color-texto: black;
+    color: var(--color-texto);
 }
 
 body{
@@ -216,12 +217,41 @@ nav ul li a{
     display: none;
 }
 
+#formularioContactar{
+    margin-top: 20px;
+}
+#formularioContactar input{
+    margin-bottom: 15px;
+}
+
+.cajaFormulario {
+    color: var(--color-texto);
+    background-color: var(--color-pagina);
+    border: 1px solid var(--color-3);
+    border-radius: 3px;
+}
+
+#enviarFormulario:hover{
+    cursor: pointer;
+    font-weight: bold;
+    transform: scale(1.25);
+    transition: 0.5s ease 0.05s;
+}
+
 footer {
     clear: both;
     border-top: 1px solid var(--color-3);
     padding-top: 1em;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+a{
+    color: inherit;
+}
+footer a:hover{
+    color: var(--color-3);
+    font-weight: bold;
 }
 
 #btnToTop{
